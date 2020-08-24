@@ -12,6 +12,10 @@ This allowed us to create the following:
 4. Security groups with inbound and outbound rules
 5. Instances for both web abb and db
 
+## For basic introduction & intro steps follow link below
+[click here](https://github.com/ugneokmanaite/Terraform)
+
+
 ## Step 1: Create `main.tf` and `variables.tf` files 
 
 ## Step 2: Ensure that API keys (access and secret) are stored in your environment variables in your machine
