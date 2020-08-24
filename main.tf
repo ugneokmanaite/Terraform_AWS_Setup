@@ -85,6 +85,16 @@ resource "aws_internet_gateway" "gw" {
 		   cidr_blocks = ["0.0.0.0/0"]
 
 	 }
+
+	   ingress{
+	       description = "access from my IP"
+	       from_port = 22
+	       to_port = 22
+	       protocol = "tcp"
+	       cidr_blocks = ["94.3.31.92/32"]
+
+
+	   }
 	   egress {
 		 from_port = 0
 		 to_port = 0
@@ -211,3 +221,8 @@ resource "aws_route_table" "route-private" {
    route_table_id = aws_route_table.route-private.id
 }
 
+# launch init script
+  data "template_file" "initapp" {
+    template = file ("init.sh.tpl")
+    
+   }

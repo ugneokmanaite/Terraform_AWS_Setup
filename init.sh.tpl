@@ -1,9 +1,7 @@
 #!/bin/bash
 
-cd /home/ubuntu/web-app
-export DB_HOST=${db_host}
+cd /home/ubuntu/environment
 . ~/.bashrc
-node seeds/seed.js
-forever stopall
-npm install
-forever start app.js
+./provision.sh 
+cd /home/ubuntu/app
+node app.js
