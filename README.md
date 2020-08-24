@@ -18,7 +18,7 @@ This allowed us to create the following:
 
 ## Step 1: Create `main.tf` and `variables.tf` files 
 
-[click here for main.tf file] (https://github.com/ugneokmanaite/Terraform_AWS_Setup/blob/master/main.tf)
+[click here for main.tf file](https://github.com/ugneokmanaite/Terraform_AWS_Setup/blob/master/main.tf)
 
 [click here for variables.tf file](https://github.com/ugneokmanaite/Terraform_AWS_Setup/blob/master/variables.tf)
 
